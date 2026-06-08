@@ -2,6 +2,7 @@ import './App.css'
 import Grid from '@mui/material/Unstable_Grid2'
 import HeaderUI from './components/HeaderUI'
 import AlertUI from './components/AlertUI'
+import SelectorUI from './components/SelectorUI'
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       </Grid>
 
       {/* Selector */}
-      <Grid xs={12} md={3}>Elemento: Selector</Grid>
+      <Grid xs={12} md={3}>
+        <SelectorUI />
+      </Grid>
 
       {/* Indicadores */}
       <Grid xs={12} md={9}>Elemento: Indicadores</Grid>
