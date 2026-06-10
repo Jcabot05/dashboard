@@ -16,6 +16,18 @@ export interface OpenMeteoCurrent {
   wind_speed_10m: number
 }
 
+export interface OpenMeteoHourlyUnits {
+  time: string
+  temperature_2m: string
+  wind_speed_10m: string
+}
+
+export interface OpenMeteoHourly {
+  time: string[]
+  temperature_2m: number[]
+  wind_speed_10m: number[]
+}
+
 export interface OpenMeteoResponse {
   latitude: number
   longitude: number
@@ -26,4 +38,6 @@ export interface OpenMeteoResponse {
   timezone_abbreviation: string
   current_units: OpenMeteoCurrentUnits
   current: OpenMeteoCurrent
+  hourly_units: OpenMeteoHourlyUnits
+  hourly: OpenMeteoHourly
 }
